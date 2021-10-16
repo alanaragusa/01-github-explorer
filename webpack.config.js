@@ -6,19 +6,16 @@ module.exports = {
         path: path.resolve(__dirname, 'dist'),
         filename: 'bundle.js'
     },
-
     resolve: {
-        extensions: ['.js', '.jsx']
+        extensions: ['.js', '.jsx'],
     },
-
     module: {
         rules: [
             {
-                // arquivos javascript // 
                 test: /\.jsx$/,
                 exclude: /node_modules/,
                 use: 'babel-loader'
             }
         ],
-    },
+    }
 };
